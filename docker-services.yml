@@ -27,7 +27,7 @@ services:
       - "INVENIO_SECRET_KEY=CHANGE_ME"
       - "INVENIO_SQLALCHEMY_DATABASE_URI=postgresql+psycopg2://test:psw@db/ils"
       - "INVENIO_RATELIMIT_STORAGE_URL=redis://cache:6379/3"
-      - "INVENIO_SPA_HOST=https://127.0.0.1"
+      - "INVENIO_SPA_HOST=http://192.168.0.209"
       - "INVENIO_REST_CSRF_ENABLED=False"
   frontend:
     build:
