@@ -14,6 +14,9 @@ RUN dnf install -y nodejs git vim
 RUN python -m site
 RUN python -m site --user-site
 
+# Install uwsgi using pip
+RUN pip3 install uwsgi
+
 # Install Invenio
 ENV WORKING_DIR=/opt/invenio_app_ils
 ENV INVENIO_INSTANCE_PATH=${WORKING_DIR}/var/instance
